@@ -8,6 +8,7 @@ class Product:
     def display(self):
         print("Product.Name = " + self.Name)
         print("Product.Price = " + str(self.Price))
+        
 
 
 class Electronics(Product):
@@ -25,6 +26,7 @@ class Electronics(Product):
     def display(self):
         super().display()
         print("Electronics.Warranty = " + str(self.Warranty))    
+
 
 class Clothing(Product):
 
@@ -44,7 +46,7 @@ class Clothing(Product):
 
 
 
-laptop = Electronics("Laptop", 50000, "2")
+laptop = Electronics("Laptop", 50000, "2 years")
 
 laptop.display()
 print("Final Price =", laptop.final_price())
